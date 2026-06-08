@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polycarp Enterprise</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    line-height:1.6;
+    color:#333;
+}
+
+header{
+    background:#0f172a;
+    color:white;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    margin:5px;
+}
+
+section{
+    padding:70px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    color:#0f172a;
+}
+
+.about{
+    background:#f8fafc;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#2563eb;
+}
+
+.why-us{
+    background:#f1f5f9;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.feature{
+    background:white;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.testimonials{
+    background:white;
+}
+
+.testimonial{
+    background:#f8fafc;
+    padding:20px;
+    border-left:5px solid #2563eb;
+    margin-bottom:20px;
+}
+
+.contact{
+    background:#0f172a;
+    color:white;
+}
+
+.contact form{
+    max-width:600px;
+    margin:auto;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:5px;
+}
+
+.contact button{
+    width:100%;
+    padding:12px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+footer{
+    background:#020617;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Polycarp Enterprise</div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Welcome to Polycarp Enterprise</h1>
+    <p>Your Trusted Partner in Quality Products and Services</p>
+
+    <a href="#services" class="btn">Our Services</a>
+    <a href="#contact" class="btn">Contact Us</a>
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">About Us</h2>
+
+    <p style="text-align:center; max-width:800px; margin:auto;">
+        Polycarp Enterprise is committed to delivering quality products and
+        professional services. We believe in reliability, integrity, and
+        customer satisfaction. Our mission is to help businesses and
+        individuals achieve their goals through dependable solutions.
+    </p>
+</section>
+
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services-grid">
+
+        <div class="card">
+            <h3>Business Supplies</h3>
+            <p>Quality supplies and products for businesses and organizations.</p>
+        </div>
+
+        <div class="card">
+            <h3>Consultancy</h3>
+            <p>Professional guidance to help businesses grow and improve.</p>
+        </div>
+
+        <div class="card">
+            <h3>Logistics</h3>
+            <p>Reliable delivery and transportation solutions.</p>
+        </div>
+
+        <div class="card">
+            <h3>General Trading</h3>
+            <p>Supply and distribution of various products and services.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="why-us">
+    <h2 class="section-title">Why Choose Us?</h2>
+
+    <div class="features">
+
+        <div class="feature">
+            <h3>✔ Quality</h3>
+            <p>Top-notch products and services.</p>
+        </div>
+
+        <div class="feature">
+            <h3>✔ Reliable</h3>
+            <p>Dependable support and delivery.</p>
+        </div>
+
+        <div class="feature">
+            <h3>✔ Affordable</h3>
+            <p>Competitive pricing for all clients.</p>
+        </div>
+
+        <div class="feature">
+            <h3>✔ Professional</h3>
+            <p>Experienced and customer-focused team.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2 class="section-title">Testimonials</h2>
+
+    <div class="testimonial">
+        "Polycarp Enterprise exceeded our expectations and delivered on time."
+        <br><strong>- Client</strong>
+    </div>
+
+    <div class="testimonial">
+        "Professional service and excellent customer support."
+        <br><strong>- Business Partner</strong>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title" style="color:white;">Contact Us</h2>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <input type="tel" placeholder="Phone Number">
+
+        <textarea rows="5" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div style="text-align:center; margin-top:30px;">
+        <p>Email: info@polycarpenterprise.co.ke</p>
+        <p>Phone: +254 723725824</p>
+        <p>Nairobi, Kenya</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Polycarp Enterprise. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
